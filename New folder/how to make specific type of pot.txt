@@ -1,0 +1,6 @@
+{
+	"using_item_condition": {
+		"type": "origins:nbt",
+		"nbt": "{Potion:"minecraft:water"}"
+	}
+}
