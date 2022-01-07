@@ -1,0 +1,49 @@
+var x=time
+var y1=damage_source_dealt
+var y2=damage_source_taken
+var z=damage_taken
+var zt=total_damage_taken
+var cd=cooldown
+
+
+y1 possibilities: outOfWorld, drown, cramming, dryout, lava, starve
+
+when you take damage, the damage will be applied after x amount of time
+___________________________
+how to run x with immunity:
+
+Proposal x1: when damage from y2 heal to full and run x
+Status: rejected
+Notes: could be abused by taking minimal damage and then being healed to full
+
+Proposal x2: when damage from y2 heal for amount taken and run x
+Status: pending
+Notes: looks promising, but seems hard to implement. borrow data from Pz1? 
+
+Proposal x3: when  damage from y2
+___________________________
+how to run y:
+
+Proposal y1: heal from all damage exccept y
+Status: rejected
+Notes: see Proposal y3
+
+Proposal y2: immunity to all damage unless cd=1<x
+Status: rejected
+Notes: taking damage when cd=1<x would just deal that damage instead of restarting cd
+
+Proposal y3: run cd when damage from y2; once cd ends deal z damage from y1
+Status: Rejected
+Notes: taking damage from 1 single source doesn't work right
+
+Proposal y4: run cd when damage from not y1; once cd ends deal zt damage from y1
+Status: pending
+_____________
+How to deal zt
+Proposal z1: create resource, increase resource by z each time. deal zt when cd ends
+Status: rejected
+Notes: can't save zt
+
+Proposal z2: Create zt as resource, increase resource by 3 whenever damage taken
+
+action when damage taken -> trigger cd ->  take z damage from y
