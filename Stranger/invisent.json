@@ -1,0 +1,32 @@
+{
+	"raycast": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:raycast",
+			"distance": 10,
+			"block": false,
+			"entity": true,
+			"shape_type": "visual",
+			"fluid_handling": "none",
+			"command_at_hit": ""
+		},
+		"falling_action": {
+			"type": "origins:excute_command",
+			"command": ""
+		},
+		"interval": 1,
+		"condition": {
+			"type": "origins:living"
+		}
+	},
+	"entrend": {
+		"type": "origins:prevent_entity_render",
+		"entity_condition": {
+			"type": "origins:command",
+			"command": "execute if score @s hit = 0",
+			"comparison": "==",
+			"compare_to": 1
+		},
+		"condition": ""
+	}
+}
