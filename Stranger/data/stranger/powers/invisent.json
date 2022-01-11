@@ -12,17 +12,39 @@
 		"cooldown": 200,
 		"hud_render": {
 			"should_render": true,
-			"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
-			"bar_index": 9
+			"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+			"bar_index": 7
 		}
 	},
-	"prevrender": {
+	"cooldown": {
+		"type": "origins:cooldown",
+		"cooldown": 100,
+		"hud_render": {
+			"should_render": false
+		}
+	},
+	"render": {
 		"type": "origins:prevent_entity_render",
+		"entity_condition": {
+			"type": "origins:entity_type",
+			"entity_type": "minecraft:player",
+			"inverted": true
+		},
+		"bientity_condition": {
+			"type": "origins:relative_rotation",
+			"actor_rotation": "head",
+			"target_rotation": "body",
+			"comparison": ">=",
+			"compare_to": -0.4
+		},
 		"condition": {
-			"type": "origins:resource",
-			"resource": "infovore:invisent_cooldown",
-			"comparison": "<=",
-			"compare_to": 1
+			"type": "origins:and",
+			"conditions": [{
+				"type": "origins:resource",
+				"resource": "infovore:invisent_cooldown",
+				"comparison": "<=",
+				"compare_to": -0.2
+			}]
 		}
 	},
 	"glow": {
@@ -30,36 +52,6 @@
 		"bientity_condition": {
 			"type": "origins:can_see"
 		}
-	},
-	"raycast": {
-		"type": "origins:action_over_time",
-		"entity_action": {
-			"type": "origins:raycast",
-			"distance": 10,
-			"block": false,
-			"entity": true,
-			"shape_type": "visual",
-			"fluid_handling": "none",
-			"command_at_hit": ""
-		},
-		"falling_action": {
-			"type": "origins:excute_command",
-			"command": ""
-		},
-		"interval": 1,
-		"condition": {
-			"type": "origins:living"
-		}
-	},
-	"entrend": {
-		"type": "origins:prevent_entity_render",
-		"entity_condition": {
-			"type": "origins:command",
-			"command": "execute if score @s hit = 0",
-			"comparison": "==",
-			"compare_to": 1
-		},
-		"condition": ""
 	},
 	"name": "invisble entities",
 	"description": "all entities are invisible. If you press the primary power button they will be visible for 5 seconds, cooldown of 20 seconds."
