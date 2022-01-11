@@ -456,6 +456,14 @@
 			"compare_to": 1
 		}
 	},
+	"preventdeath": {
+		"type": "origins:prevent_death",
+		"damage_condition": {
+			"type": "origins:name",
+			"name": "outOfWorld",
+			"inverted": true
+		}
+	},
 	"name": "Damage Delay",
 	"description": "everything deals 5 damage, but its on a delay. whenever you take damage, a 2.5 second timer starts, once it ends you take the damage you were supposed to. However, each level of protection on your armor increases the delay."
 }
