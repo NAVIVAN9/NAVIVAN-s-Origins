@@ -18,11 +18,8 @@
 	},
 	"prevrender": {
 		"type": "origins:prevent_entity_render",
-		"condition": {
-			"type": "origins:resource",
-			"resource": "infovore:invisent_cooldown",
-			"comparison": "<=",
-			"compare_to": 1
+		"entity_condition": {
+			
 		}
 	},
 	"glow": {
