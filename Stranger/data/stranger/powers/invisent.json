@@ -37,7 +37,7 @@
 			"entity": true,
 			"shape_type": "visual",
 			"fluid_handling": "none",
-			"command_at_hit": ""
+			"command_at_hit": "scoreboard players set @s hit 1"
 		},
 		"falling_action": {
 			"type": "origins:excute_command",
