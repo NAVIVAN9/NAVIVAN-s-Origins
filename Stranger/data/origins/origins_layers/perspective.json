@@ -1,0 +1,18 @@
+{
+	"order": 1,
+	"origins": [
+    {
+		"condition": {
+			"type": "origins:origin",
+			"origin": "stranger:stranger"
+		},
+		"origins": [
+			"stranger:technical",
+			"stranger:mechanical"
+		]
+	},
+    "stranger:blank"
+  ],
+  "auto_choose": true,
+	"name": "starting perspective"
+}
