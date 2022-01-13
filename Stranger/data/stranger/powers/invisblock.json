@@ -104,6 +104,35 @@
 			"name": "inWall"
 		}
 	},
+	"stabthrough": {
+		"type": "origins:prevent_block_selection",
+		"condition": {
+			"type": "origins:equipped_item",
+			"equipment_slot": "mainhand",
+			"item_condition": {
+				"type": "origins:ingredient",
+				"ingredient": [{
+						"item": "minecraft:diamond_sword"
+					},
+					{
+						"item": "minecraft:wooden_sword"
+					},
+					{
+						"item": "minecraft:iron_sword"
+					},
+					{
+						"item": "minecraft:gold_sword"
+					},
+					{
+						"item": "minecraft:netherite_sword"
+					},
+					{
+						"item": "minecraft:stone_sword"
+					}
+				]
+			}
+		}
+	},
 	"name": "ghost blocks",
 	"description": "You phase through the first ''layer'' of blocks. if a block has any faces that are touching air, water, or lava; then it will be passed through. comes with night vision and a lack of suffocation for a better user experience."
 }
