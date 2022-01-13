@@ -16,7 +16,7 @@
         },
         "else_action": {
           "type": "origins:execute_command",
-          "command": "origin set @s stranger physical"
+          "command": "origin set @s stranger ghost"
         }
       }
       ]
