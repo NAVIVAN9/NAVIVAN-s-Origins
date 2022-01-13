@@ -1,5 +1,7 @@
 {
-  "powers": [],
+  "powers": [
+    "stranger:invisent"
+  ],
   "name": "physical",
   "description": "TBD"
 }
