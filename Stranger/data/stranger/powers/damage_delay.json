@@ -7,25 +7,6 @@
 		"hud_render": {
 			"should__render": true,
 			"bar_index": 4
-		},
-		"max_action": {
-			"type": "origins:and",
-			"actions": [{
-					"type": "origins:damage",
-					"amount": 50,
-					"source": {
-						"name": "outOfWorld",
-						"bypasses_armor": true,
-						"unblockable": true
-					}
-				},
-				{
-					"type": "origins:change_resource",
-					"resource": "infovore:damage_delay_resource",
-					"operation": "set",
-					"change": 1
-				}
-			]
 		}
 	},
 	"when_damage": {
@@ -48,7 +29,7 @@
 									},
 									{
 										"type": "origins:change_resource",
-										"resource": "infovore:damage_delay_resource",
+										"resource": "stranger:damage_delay_resource",
 										"change": 1
 									}
 								]
@@ -68,7 +49,7 @@
 									},
 									{
 										"type": "origins:change_resource",
-										"resource": "infovore:damage_delay_resource",
+										"resource": "stranger:damage_delay_resource",
 										"change": 2
 									}
 								]
@@ -88,7 +69,7 @@
 									},
 									{
 										"type": "origins:change_resource",
-										"resource": "infovore:damage_delay_resource",
+										"resource": "stranger:damage_delay_resource",
 										"change": 3
 									}
 								]
@@ -108,7 +89,7 @@
 									},
 									{
 										"type": "origins:change_resource",
-										"resource": "infovore:damage_delay_resource",
+										"resource": "stranger:damage_delay_resource",
 										"change": 4
 									}
 								]
@@ -128,7 +109,7 @@
 									},
 									{
 										"type": "origins:change_resource",
-										"resource": "infovore:damage_delay_resource",
+										"resource": "stranger:damage_delay_resource",
 										"change": 5
 									}
 								]
@@ -148,7 +129,7 @@
 									},
 									{
 										"type": "origins:change_resource",
-										"resource": "infovore:damage_delay_resource",
+										"resource": "stranger:damage_delay_resource",
 										"change": 6
 									}
 								]
@@ -168,7 +149,7 @@
 									},
 									{
 										"type": "origins:change_resource",
-										"resource": "infovore:damage_delay_resource",
+										"resource": "stranger:damage_delay_resource",
 										"change": 7
 									}
 								]
@@ -188,7 +169,7 @@
 									},
 									{
 										"type": "origins:change_resource",
-										"resource": "infovore:damage_delay_resource",
+										"resource": "stranger:damage_delay_resource",
 										"change": 8
 									}
 								]
@@ -208,7 +189,7 @@
 									},
 									{
 										"type": "origins:change_resource",
-										"resource": "infovore:damage_delay_resource",
+										"resource": "stranger:damage_delay_resource",
 										"change": 9
 									}
 								]
@@ -228,7 +209,7 @@
 									},
 									{
 										"type": "origins:change_resource",
-										"resource": "infovore:damage_delay_resource",
+										"resource": "stranger:damage_delay_resource",
 										"change": 10
 									}
 								]
@@ -248,7 +229,7 @@
 									},
 									{
 										"type": "origins:change_resource",
-										"resource": "infovore:damage_delay_resource",
+										"resource": "stranger:damage_delay_resource",
 										"change": 11
 									}
 								]
@@ -268,7 +249,7 @@
 									},
 									{
 										"type": "origins:change_resource",
-										"resource": "infovore:damage_delay_resource",
+										"resource": "stranger:damage_delay_resource",
 										"change": 12
 									}
 								]
@@ -288,7 +269,7 @@
 									},
 									{
 										"type": "origins:change_resource",
-										"resource": "infovore:damage_delay_resource",
+										"resource": "stranger:damage_delay_resource",
 										"change": 13
 									}
 								]
@@ -308,7 +289,7 @@
 									},
 									{
 										"type": "origins:change_resource",
-										"resource": "infovore:damage_delay_resource",
+										"resource": "stranger:damage_delay_resource",
 										"change": 14
 									}
 								]
@@ -328,7 +309,7 @@
 									},
 									{
 										"type": "origins:change_resource",
-										"resource": "infovore:damage_delay_resource",
+										"resource": "stranger:damage_delay_resource",
 										"change": 15
 									}
 								]
@@ -348,7 +329,7 @@
 									},
 									{
 										"type": "origins:change_resource",
-										"resource": "infovore:damage_delay_resource",
+										"resource": "stranger:damage_delay_resource",
 										"change": 16
 									}
 								]
@@ -368,7 +349,7 @@
 									},
 									{
 										"type": "origins:change_resource",
-										"resource": "infovore:damage_delay_resource",
+										"resource": "stranger:damage_delay_resource",
 										"change": 17
 									}
 								]
@@ -388,7 +369,7 @@
 									},
 									{
 										"type": "origins:change_resource",
-										"resource": "infovore:damage_delay_resource",
+										"resource": "stranger:damage_delay_resource",
 										"change": 18
 									}
 								]
@@ -408,7 +389,7 @@
 									},
 									{
 										"type": "origins:change_resource",
-										"resource": "infovore:damage_delay_resource",
+										"resource": "stranger:damage_delay_resource",
 										"change": 19
 									}
 								]
@@ -440,18 +421,10 @@
 		}
 	},
 	"damage": {
-		"type": "origins:damage_over_time",
-		"interval": 48,
-		"damage": 5,
-		"damage_source": {
-			"name": "outOfWorld",
-			"unblockable": true,
-			"bypasses_armor": true
-		},
-		"protection_enchantment": "minecraft:protection",
+		"type": "origins:action_over_time",
 		"condition": {
 			"type": "origins:resource",
-			"resource": "infovore:damage_delay_timer",
+			"resource": "stranger:damage_delay_timer",
 			"comparison": ">=",
 			"compare_to": 1
 		}
