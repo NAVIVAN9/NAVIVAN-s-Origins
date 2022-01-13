@@ -7,16 +7,16 @@
         "type": "origins:if_else",
         "condition": {
           "type": "origins:origin",
-          "origin": "stranger:technical",
+          "origin": "stranger:ghost",
           "layer": "stranger:perspective"
         },
         "if_action": {
           "type": "origins:execute_command",
-          "command": "origin set @s stranger mechanical"
+          "command": "origin set @s stranger physical"
         },
         "else_action": {
           "type": "origins:execute_command",
-          "command": "origin set @s stranger technical"
+          "command": "origin set @s stranger physical"
         }
       }
       ]
