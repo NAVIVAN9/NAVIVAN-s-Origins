@@ -2,7 +2,7 @@
   "powers": [
     "stranger:invisent",
     "stranger:invisblock",
-    "stranger:damagedelay"
+    "stranger:damage_delay"
     ],
   "name": "Stranger",
   "description": "As a stranger to this world, you haven't been able to fully adapt to it."
