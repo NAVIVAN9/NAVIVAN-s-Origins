@@ -1,9 +1,0 @@
-{
-  "type": "origins:toggle",
-  "active_by_default": false,
-  "key": {
-     "key.origins.primary_active"
-  },
-  "name": "Perspective Swap",
-  "description": "Change your perspective on the world to gain new abilities and lose the old ones."
-}
