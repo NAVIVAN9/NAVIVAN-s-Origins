@@ -4,7 +4,7 @@
     {
 		"condition": {
 			"type": "origins:origin",
-			"origin": "stranger:stranger2"
+			"origin": "stranger:swapper"
 		},
 		"origins": [
 			"stranger:ghost",
