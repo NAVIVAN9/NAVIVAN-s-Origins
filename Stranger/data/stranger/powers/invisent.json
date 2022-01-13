@@ -6,7 +6,7 @@
 			"type": "origins:and",
 			"actions": [{
 				"type": "origins:trigger_cooldown",
-				"power": "stranger:invisent2_cooldown"
+				"power": "stranger:invisent_cooldown"
 			}]
 		},
 		"cooldown": 200,
@@ -38,7 +38,7 @@
 		},
 		"condition": {
       "type": "origins:power_active",
-      "power": "stranger:
+      "power": "stranger:invisent_
 	},
 	"name": "invisble entities",
 	"description": "all entities are invisible. If you press the primary power button they will be visible for 5 seconds, cooldown of 20 seconds."
