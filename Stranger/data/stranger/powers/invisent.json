@@ -38,7 +38,7 @@
 		},
 		"condition": {
       "type": "origins:power_active",
-      "power": "stranger:invisent_
+      "power": "stranger:toggle"
 	},
 	"name": "invisble entities",
 	"description": "all entities are invisible. If you press the primary power button they will be visible for 5 seconds, cooldown of 20 seconds."
