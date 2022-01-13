@@ -1,1 +1,5 @@
-
+{
+  "powers": [
+    "stranger:swap"
+   ]
+}
