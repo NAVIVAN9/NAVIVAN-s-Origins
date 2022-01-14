@@ -9,404 +9,669 @@
 			"bar_index": 4
 		}
 	},
-	"when_damage": {
+	"when_damage_1": {
 		"type": "origins:action_when_damage_taken",
 		"entity_action": {
 			"type": "origins:and",
 			"actions": [{
-					"type": "origins:if_else_list",
-					"actions": [{
-							"condition": {
-								"type": "origins:health",
-								"comparison": "==",
-								"compare_to": 19
-							},
-							"action": {
-								"type": "origins:and",
-								"actions": [{
-										"type": "origins:heal",
-										"amount": 1
-									},
-									{
-										"type": "origins:change_resource",
-										"resource": "stranger:damage_delay_resource",
-										"change": 1
-									}
-								]
-							}
-						},
-						{
-							"condition": {
-								"type": "origins:health",
-								"comparison": "==",
-								"compare_to": 18
-							},
-							"action": {
-								"type": "origins:and",
-								"actions": [{
-										"type": "origins:heal",
-										"amount": 2
-									},
-									{
-										"type": "origins:change_resource",
-										"resource": "stranger:damage_delay_resource",
-										"change": 2
-									}
-								]
-							}
-						},
-						{
-							"condition": {
-								"type": "origins:health",
-								"comparison": "==",
-								"compare_to": 17
-							},
-							"action": {
-								"type": "origins:and",
-								"actions": [{
-										"type": "origins:heal",
-										"amount": 3
-									},
-									{
-										"type": "origins:change_resource",
-										"resource": "stranger:damage_delay_resource",
-										"change": 3
-									}
-								]
-							}
-						},
-						{
-							"condition": {
-								"type": "origins:health",
-								"comparison": "==",
-								"compare_to": 16
-							},
-							"action": {
-								"type": "origins:and",
-								"actions": [{
-										"type": "origins:heal",
-										"amount": 4
-									},
-									{
-										"type": "origins:change_resource",
-										"resource": "stranger:damage_delay_resource",
-										"change": 4
-									}
-								]
-							}
-						},
-						{
-							"condition": {
-								"type": "origins:health",
-								"comparison": "==",
-								"compare_to": 15
-							},
-							"action": {
-								"type": "origins:and",
-								"actions": [{
-										"type": "origins:heal",
-										"amount": 5
-									},
-									{
-										"type": "origins:change_resource",
-										"resource": "stranger:damage_delay_resource",
-										"change": 5
-									}
-								]
-							}
-						},
-						{
-							"condition": {
-								"type": "origins:health",
-								"comparison": "==",
-								"compare_to": 14
-							},
-							"action": {
-								"type": "origins:and",
-								"actions": [{
-										"type": "origins:heal",
-										"amount": 6
-									},
-									{
-										"type": "origins:change_resource",
-										"resource": "stranger:damage_delay_resource",
-										"change": 6
-									}
-								]
-							}
-						},
-						{
-							"condition": {
-								"type": "origins:health",
-								"comparison": "==",
-								"compare_to": 13
-							},
-							"action": {
-								"type": "origins:and",
-								"actions": [{
-										"type": "origins:heal",
-										"amount": 7
-									},
-									{
-										"type": "origins:change_resource",
-										"resource": "stranger:damage_delay_resource",
-										"change": 7
-									}
-								]
-							}
-						},
-						{
-							"condition": {
-								"type": "origins:health",
-								"comparison": "==",
-								"compare_to": 12
-							},
-							"action": {
-								"type": "origins:and",
-								"actions": [{
-										"type": "origins:heal",
-										"amount": 8
-									},
-									{
-										"type": "origins:change_resource",
-										"resource": "stranger:damage_delay_resource",
-										"change": 8
-									}
-								]
-							}
-						},
-						{
-							"condition": {
-								"type": "origins:health",
-								"comparison": "==",
-								"compare_to": 11
-							},
-							"action": {
-								"type": "origins:and",
-								"actions": [{
-										"type": "origins:heal",
-										"amount": 9
-									},
-									{
-										"type": "origins:change_resource",
-										"resource": "stranger:damage_delay_resource",
-										"change": 9
-									}
-								]
-							}
-						},
-						{
-							"condition": {
-								"type": "origins:health",
-								"comparison": "==",
-								"compare_to": 10
-							},
-							"action": {
-								"type": "origins:and",
-								"actions": [{
-										"type": "origins:heal",
-										"amount": 10
-									},
-									{
-										"type": "origins:change_resource",
-										"resource": "stranger:damage_delay_resource",
-										"change": 10
-									}
-								]
-							}
-						},
-						{
-							"condition": {
-								"type": "origins:health",
-								"comparison": "==",
-								"compare_to": 9
-							},
-							"action": {
-								"type": "origins:and",
-								"actions": [{
-										"type": "origins:heal",
-										"amount": 11
-									},
-									{
-										"type": "origins:change_resource",
-										"resource": "stranger:damage_delay_resource",
-										"change": 11
-									}
-								]
-							}
-						},
-						{
-							"condition": {
-								"type": "origins:health",
-								"comparison": "==",
-								"compare_to": 8
-							},
-							"action": {
-								"type": "origins:and",
-								"actions": [{
-										"type": "origins:heal",
-										"amount": 12
-									},
-									{
-										"type": "origins:change_resource",
-										"resource": "stranger:damage_delay_resource",
-										"change": 12
-									}
-								]
-							}
-						},
-						{
-							"condition": {
-								"type": "origins:health",
-								"comparison": "==",
-								"compare_to": 7
-							},
-							"action": {
-								"type": "origins:and",
-								"actions": [{
-										"type": "origins:heal",
-										"amount": 13
-									},
-									{
-										"type": "origins:change_resource",
-										"resource": "stranger:damage_delay_resource",
-										"change": 13
-									}
-								]
-							}
-						},
-						{
-							"condition": {
-								"type": "origins:health",
-								"comparison": "==",
-								"compare_to": 6
-							},
-							"action": {
-								"type": "origins:and",
-								"actions": [{
-										"type": "origins:heal",
-										"amount": 14
-									},
-									{
-										"type": "origins:change_resource",
-										"resource": "stranger:damage_delay_resource",
-										"change": 14
-									}
-								]
-							}
-						},
-						{
-							"condition": {
-								"type": "origins:health",
-								"comparison": "==",
-								"compare_to": 5
-							},
-							"action": {
-								"type": "origins:and",
-								"actions": [{
-										"type": "origins:heal",
-										"amount": 15
-									},
-									{
-										"type": "origins:change_resource",
-										"resource": "stranger:damage_delay_resource",
-										"change": 15
-									}
-								]
-							}
-						},
-						{
-							"condition": {
-								"type": "origins:health",
-								"comparison": "==",
-								"compare_to": 4
-							},
-							"action": {
-								"type": "origins:and",
-								"actions": [{
-										"type": "origins:heal",
-										"amount": 16
-									},
-									{
-										"type": "origins:change_resource",
-										"resource": "stranger:damage_delay_resource",
-										"change": 16
-									}
-								]
-							}
-						},
-						{
-							"condition": {
-								"type": "origins:health",
-								"comparison": "==",
-								"compare_to": 3
-							},
-							"action": {
-								"type": "origins:and",
-								"actions": [{
-										"type": "origins:heal",
-										"amount": 17
-									},
-									{
-										"type": "origins:change_resource",
-										"resource": "stranger:damage_delay_resource",
-										"change": 17
-									}
-								]
-							}
-						},
-						{
-							"condition": {
-								"type": "origins:health",
-								"comparison": "==",
-								"compare_to": 2
-							},
-							"action": {
-								"type": "origins:and",
-								"actions": [{
-										"type": "origins:heal",
-										"amount": 18
-									},
-									{
-										"type": "origins:change_resource",
-										"resource": "stranger:damage_delay_resource",
-										"change": 18
-									}
-								]
-							}
-						},
-						{
-							"condition": {
-								"type": "origins:health",
-								"comparison": "==",
-								"compare_to": 1
-							},
-							"action": {
-								"type": "origins:and",
-								"actions": [{
-										"type": "origins:heal",
-										"amount": 19
-									},
-									{
-										"type": "origins:change_resource",
-										"resource": "stranger:damage_delay_resource",
-										"change": 19
-									}
-								]
-							}
-						}
-					]
+
+					"type": "origins:heal",
+					"amount": 1
 				},
 				{
 					"type": "origins:trigger_cooldown",
 					"power": "stranger:damage_delay_timer"
+				},
+				{
+					"type": "origins:change_resource",
+					"resource": "stranger:damage_delay_resource",
+					"change": 1
 				}
 			]
 		},
 		"damage_condition": {
-			"type": "origins:name",
-			"name": "outOfWorld",
-			"inverted": true
+			"type": "origins:and",
+			"conditions": [{
+					"type": "origins:name",
+					"name": "outOfWorld",
+					"inverted": true
+				},
+				{
+					"type": "origins:amount",
+					"comparison": "==",
+					"compare_to": 1
+				}
+			]
+		},
+		"cooldown": 1
+	},
+	"when_damage_2": {
+		"type": "origins:action_when_damage_taken",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [{
+					"type": "origins:heal",
+					"amount": 2
+				},
+				{
+					"type": "origins:trigger_cooldown",
+					"power": "stranger:damage_delay_timer"
+				},
+				{
+					"type": "origins:change_resource",
+					"resource": "stranger:damage_delay_resource",
+					"change": 2
+				}
+			]
+		},
+		"damage_condition": {
+			"type": "origins:and",
+			"conditions": [{
+					"type": "origins:name",
+					"name": "outOfWorld",
+					"inverted": true
+				},
+				{
+					"type": "origins:amount",
+					"comparison": "==",
+					"compare_to": 2
+				}
+			]
+		},
+		"cooldown": 1
+	},
+	"when_damage_3": {
+		"type": "origins:action_when_damage_taken",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [{
+					"type": "origins:heal",
+					"amount": 3
+				},
+				{
+					"type": "origins:trigger_cooldown",
+					"power": "stranger:damage_delay_timer"
+				},
+				{
+					"type": "origins:change_resource",
+					"resource": "stranger:damage_delay_resource",
+					"change": 3
+				}
+			]
+		},
+		"damage_condition": {
+			"type": "origins:and",
+			"conditions": [{
+					"type": "origins:name",
+					"name": "outOfWorld",
+					"inverted": true
+				},
+				{
+					"type": "origins:amount",
+					"comparison": "==",
+					"compare_to": 3
+				}
+			]
+		},
+		"cooldown": 1
+	},
+	"when_damage_4": {
+		"type": "origins:action_when_damage_taken",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [{
+					"type": "origins:heal",
+					"amount": 4
+				},
+				{
+					"type": "origins:trigger_cooldown",
+					"power": "stranger:damage_delay_timer"
+				},
+				{
+					"type": "origins:change_resource",
+					"resource": "stranger:damage_delay_resource",
+					"change": 4
+				}
+			]
+		},
+		"damage_condition": {
+			"type": "origins:and",
+			"conditions": [{
+					"type": "origins:name",
+					"name": "outOfWorld",
+					"inverted": true
+				},
+				{
+					"type": "origins:amount",
+					"comparison": "==",
+					"compare_to": 4
+				}
+			]
+		},
+		"cooldown": 1
+	},
+	"when_damage_5": {
+		"type": "origins:action_when_damage_taken",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [{
+					"type": "origins:heal",
+					"amount": 5
+				},
+				{
+					"type": "origins:trigger_cooldown",
+					"power": "stranger:damage_delay_timer"
+				},
+				{
+					"type": "origins:change_resource",
+					"resource": "stranger:damage_delay_resource",
+					"change": 5
+				}
+			]
+		},
+		"damage_condition": {
+			"type": "origins:and",
+			"conditions": [{
+					"type": "origins:name",
+					"name": "outOfWorld",
+					"inverted": true
+				},
+				{
+					"type": "origins:amount",
+					"comparison": "==",
+					"compare_to": 5
+				}
+			]
+		},
+		"cooldown": 1
+	},
+	"when_damage_6": {
+		"type": "origins:action_when_damage_taken",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [{
+					"type": "origins:heal",
+					"amount": 6
+				},
+				{
+					"type": "origins:trigger_cooldown",
+					"power": "stranger:damage_delay_timer"
+				},
+				{
+					"type": "origins:change_resource",
+					"resource": "stranger:damage_delay_resource",
+					"change": 6
+				}
+			]
+		},
+		"damage_condition": {
+			"type": "origins:and",
+			"conditions": [{
+					"type": "origins:name",
+					"name": "outOfWorld",
+					"inverted": true
+				},
+				{
+					"type": "origins:amount",
+					"comparison": "==",
+					"compare_to": 6
+				}
+			]
+		},
+		"cooldown": 1
+	},
+	"when_damage_7": {
+		"type": "origins:action_when_damage_taken",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [{
+					"type": "origins:heal",
+					"amount": 7
+				},
+				{
+					"type": "origins:trigger_cooldown",
+					"power": "stranger:damage_delay_timer"
+				},
+				{
+					"type": "origins:change_resource",
+					"resource": "stranger:damage_delay_resource",
+					"change": 7
+				}
+			]
+		},
+		"damage_condition": {
+			"type": "origins:and",
+			"conditions": [{
+					"type": "origins:name",
+					"name": "outOfWorld",
+					"inverted": true
+				},
+				{
+					"type": "origins:amount",
+					"comparison": "==",
+					"compare_to": 7
+				}
+			]
+		},
+		"cooldown": 1
+	},
+	"when_damage_8": {
+		"type": "origins:action_when_damage_taken",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [{
+					"type": "origins:heal",
+					"amount": 8
+				},
+				{
+					"type": "origins:trigger_cooldown",
+					"power": "stranger:damage_delay_timer"
+				},
+				{
+					"type": "origins:change_resource",
+					"resource": "stranger:damage_delay_resource",
+					"change": 8
+				}
+			]
+		},
+		"damage_condition": {
+			"type": "origins:and",
+			"conditions": [{
+					"type": "origins:name",
+					"name": "outOfWorld",
+					"inverted": true
+				},
+				{
+					"type": "origins:amount",
+					"comparison": "==",
+					"compare_to": 8
+				}
+			]
+		},
+		"cooldown": 1
+	},
+	"when_damage_9": {
+		"type": "origins:action_when_damage_taken",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [{
+					"type": "origins:heal",
+					"amount": 9
+				},
+				{
+					"type": "origins:trigger_cooldown",
+					"power": "stranger:damage_delay_timer"
+				},
+				{
+					"type": "origins:change_resource",
+					"resource": "stranger:damage_delay_resource",
+					"change": 9
+				}
+			]
+		},
+		"damage_condition": {
+			"type": "origins:and",
+			"conditions": [{
+					"type": "origins:name",
+					"name": "outOfWorld",
+					"inverted": true
+				},
+				{
+					"type": "origins:amount",
+					"comparison": "==",
+					"compare_to": 9
+				}
+			]
+		},
+		"cooldown": 1
+	},
+	"when_damage_10": {
+		"type": "origins:action_when_damage_taken",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [{
+					"type": "origins:heal",
+					"amount": 10
+				},
+				{
+					"type": "origins:trigger_cooldown",
+					"power": "stranger:damage_delay_timer"
+				},
+				{
+					"type": "origins:change_resource",
+					"resource": "stranger:damage_delay_resource",
+					"change": 10
+				}
+			]
+		},
+		"damage_condition": {
+			"type": "origins:and",
+			"conditions": [{
+					"type": "origins:name",
+					"name": "outOfWorld",
+					"inverted": true
+				},
+				{
+					"type": "origins:amount",
+					"comparison": "==",
+					"compare_to": 10
+				}
+			]
+		},
+		"cooldown": 1
+	},
+	"when_damage_11": {
+		"type": "origins:action_when_damage_taken",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [{
+					"type": "origins:heal",
+					"amount": 11
+				},
+				{
+					"type": "origins:trigger_cooldown",
+					"power": "stranger:damage_delay_timer"
+				},
+				{
+					"type": "origins:change_resource",
+					"resource": "stranger:damage_delay_resource",
+					"change": 11
+				}
+			]
+		},
+		"damage_condition": {
+			"type": "origins:and",
+			"conditions": [{
+					"type": "origins:name",
+					"name": "outOfWorld",
+					"inverted": true
+				},
+				{
+					"type": "origins:amount",
+					"comparison": "==",
+					"compare_to": 11
+				}
+			]
+		},
+		"cooldown": 1
+	},
+	"when_damage_12": {
+		"type": "origins:action_when_damage_taken",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [{
+					"type": "origins:heal",
+					"amount": 12
+				},
+				{
+					"type": "origins:trigger_cooldown",
+					"power": "stranger:damage_delay_timer"
+				},
+				{
+					"type": "origins:change_resource",
+					"resource": "stranger:damage_delay_resource",
+					"change": 12
+				}
+			]
+		},
+		"damage_condition": {
+			"type": "origins:and",
+			"conditions": [{
+					"type": "origins:name",
+					"name": "outOfWorld",
+					"inverted": true
+				},
+				{
+					"type": "origins:amount",
+					"comparison": "==",
+					"compare_to": 12
+				}
+			]
+		},
+		"cooldown": 1
+	},
+	"when_damage_13": {
+		"type": "origins:action_when_damage_taken",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [{
+					"type": "origins:heal",
+					"amount": 13
+				},
+				{
+					"type": "origins:trigger_cooldown",
+					"power": "stranger:damage_delay_timer"
+				},
+				{
+					"type": "origins:change_resource",
+					"resource": "stranger:damage_delay_resource",
+					"change": 13
+				}
+			]
+		},
+		"damage_condition": {
+			"type": "origins:and",
+			"conditions": [{
+					"type": "origins:name",
+					"name": "outOfWorld",
+					"inverted": true
+				},
+				{
+					"type": "origins:amount",
+					"comparison": "==",
+					"compare_to": 13
+				}
+			]
+		},
+		"cooldown": 1
+	},
+	"when_damage_14": {
+		"type": "origins:action_when_damage_taken",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [{
+					"type": "origins:heal",
+					"amount": 14
+				},
+				{
+					"type": "origins:trigger_cooldown",
+					"power": "stranger:damage_delay_timer"
+				},
+				{
+					"type": "origins:change_resource",
+					"resource": "stranger:damage_delay_resource",
+					"change": 14
+				}
+			]
+		},
+		"damage_condition": {
+			"type": "origins:and",
+			"conditions": [{
+					"type": "origins:name",
+					"name": "outOfWorld",
+					"inverted": true
+				},
+				{
+					"type": "origins:amount",
+					"comparison": "==",
+					"compare_to": 14
+				}
+			]
+		},
+		"cooldown": 1
+	},
+	"when_damage_15": {
+		"type": "origins:action_when_damage_taken",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [{
+					"type": "origins:heal",
+					"amount": 15
+				},
+				{
+					"type": "origins:trigger_cooldown",
+					"power": "stranger:damage_delay_timer"
+				},
+				{
+					"type": "origins:change_resource",
+					"resource": "stranger:damage_delay_resource",
+					"change": 15
+				}
+			]
+		},
+		"damage_condition": {
+			"type": "origins:and",
+			"conditions": [{
+					"type": "origins:name",
+					"name": "outOfWorld",
+					"inverted": true
+				},
+				{
+					"type": "origins:amount",
+					"comparison": "==",
+					"compare_to": 15
+				}
+			]
+		},
+		"cooldown": 1
+	},
+	"when_damage_16": {
+		"type": "origins:action_when_damage_taken",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [{
+					"type": "origins:heal",
+					"amount": 16
+				},
+				{
+					"type": "origins:trigger_cooldown",
+					"power": "stranger:damage_delay_timer"
+				},
+				{
+					"type": "origins:change_resource",
+					"resource": "stranger:damage_delay_resource",
+					"change": 16
+				}
+			]
+		},
+		"damage_condition": {
+			"type": "origins:and",
+			"conditions": [{
+					"type": "origins:name",
+					"name": "outOfWorld",
+					"inverted": true
+				},
+				{
+					"type": "origins:amount",
+					"comparison": "==",
+					"compare_to": 16
+				}
+			]
+		},
+		"cooldown": 1
+	},
+	"when_damage_17": {
+		"type": "origins:action_when_damage_taken",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [{
+					"type": "origins:heal",
+					"amount": 17
+				},
+				{
+					"type": "origins:trigger_cooldown",
+					"power": "stranger:damage_delay_timer"
+				},
+				{
+					"type": "origins:change_resource",
+					"resource": "stranger:damage_delay_resource",
+					"change": 17
+				}
+			]
+		},
+		"damage_condition": {
+			"type": "origins:and",
+			"conditions": [{
+					"type": "origins:name",
+					"name": "outOfWorld",
+					"inverted": true
+				},
+				{
+					"type": "origins:amount",
+					"comparison": "==",
+					"compare_to": 17
+				}
+			]
+		},
+		"cooldown": 1
+	},
+	"when_damage_18": {
+		"type": "origins:action_when_damage_taken",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [{
+					"type": "origins:heal",
+					"amount": 18
+				},
+				{
+					"type": "origins:trigger_cooldown",
+					"power": "stranger:damage_delay_timer"
+				},
+				{
+					"type": "origins:change_resource",
+					"resource": "stranger:damage_delay_resource",
+					"change": 18
+				}
+			]
+		},
+		"damage_condition": {
+			"type": "origins:and",
+			"conditions": [{
+					"type": "origins:name",
+					"name": "outOfWorld",
+					"inverted": true
+				},
+				{
+					"type": "origins:amount",
+					"comparison": "==",
+					"compare_to": 18
+				}
+			]
+		},
+		"cooldown": 1
+	},
+	"when_damage_19": {
+		"type": "origins:action_when_damage_taken",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [{
+					"type": "origins:heal",
+					"amount": 19
+				},
+				{
+					"type": "origins:trigger_cooldown",
+					"power": "stranger:damage_delay_timer"
+				},
+				{
+					"type": "origins:change_resource",
+					"resource": "stranger:damage_delay_resource",
+					"change": 19
+				}
+			]
+		},
+		"damage_condition": {
+			"type": "origins:and",
+			"conditions": [{
+					"type": "origins:name",
+					"name": "outOfWorld",
+					"inverted": true
+				},
+				{
+					"type": "origins:amount",
+					"comparison": "==",
+					"compare_to": 19
+				}
+			]
 		},
 		"cooldown": 1
 	},
@@ -995,7 +1260,8 @@
 									"name": "outOfWorld"
 								}
 							}
-						}, {
+						},
+						{
 							"condition": {
 								"type": "origins:resource",
 								"resource": "stranger:damage_delay_resource",
@@ -1009,7 +1275,8 @@
 									"name": "outOfWorld"
 								}
 							}
-						}, {
+						},
+						{
 							"condition": {
 								"type": "origins:resource",
 								"resource": "stranger:damage_delay_resource",
@@ -1023,7 +1290,8 @@
 									"name": "outOfWorld"
 								}
 							}
-						}, {
+						},
+						{
 							"condition": {
 								"type": "origins:resource",
 								"resource": "stranger:damage_delay_resource",
@@ -1037,7 +1305,8 @@
 									"name": "outOfWorld"
 								}
 							}
-						}, {
+						},
+						{
 							"condition": {
 								"type": "origins:resource",
 								"resource": "stranger:damage_delay_resource",
@@ -1051,7 +1320,8 @@
 									"name": "outOfWorld"
 								}
 							}
-						}, {
+						},
+						{
 							"condition": {
 								"type": "origins:resource",
 								"resource": "stranger:damage_delay_resource",
@@ -1065,7 +1335,8 @@
 									"name": "outOfWorld"
 								}
 							}
-						}, {
+						},
+						{
 							"condition": {
 								"type": "origins:resource",
 								"resource": "stranger:damage_delay_resource",
@@ -1079,7 +1350,8 @@
 									"name": "outOfWorld"
 								}
 							}
-						}, {
+						},
+						{
 							"condition": {
 								"type": "origins:resource",
 								"resource": "stranger:damage_delay_resource",
@@ -1093,7 +1365,8 @@
 									"name": "outOfWorld"
 								}
 							}
-						}, {
+						},
+						{
 							"condition": {
 								"type": "origins:resource",
 								"resource": "stranger:damage_delay_resource",
@@ -1107,7 +1380,8 @@
 									"name": "outOfWorld"
 								}
 							}
-						}, {
+						},
+						{
 							"condition": {
 								"type": "origins:resource",
 								"resource": "stranger:damage_delay_resource",
@@ -1121,7 +1395,8 @@
 									"name": "outOfWorld"
 								}
 							}
-						}, {
+						},
+						{
 							"condition": {
 								"type": "origins:resource",
 								"resource": "stranger:damage_delay_resource",
@@ -1135,7 +1410,8 @@
 									"name": "outOfWorld"
 								}
 							}
-						}, {
+						},
+						{
 							"condition": {
 								"type": "origins:resource",
 								"resource": "stranger:damage_delay_resource",
@@ -1149,7 +1425,8 @@
 									"name": "outOfWorld"
 								}
 							}
-						}, {
+						},
+						{
 							"condition": {
 								"type": "origins:resource",
 								"resource": "stranger:damage_delay_resource",
