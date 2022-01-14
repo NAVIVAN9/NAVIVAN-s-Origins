@@ -3,7 +3,8 @@
     "stranger:invisent",
     "stranger:invisblock",
     "stranger:damage_delay"
-    ],
+  ],
+  "impact": 3,
   "name": "Stranger",
   "description": "As a stranger to this world, you haven't been able to fully adapt to it."
 }
