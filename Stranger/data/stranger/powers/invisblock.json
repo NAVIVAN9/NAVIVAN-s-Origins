@@ -135,15 +135,55 @@
 					}
 				},
 				{
-					"type": "origins:sneaking",
+					"type": "origins:sneaking"
 				}
 			]
 		}
 	},
 	"blockuse": {
 		"type": "origins:prevent_block_use",
+		"block_condition": {
+			"type": "origins:and",
+			"conditions": [{
+					"type": "origins:block",
+					"block": "air",
+					"inverted": true
+				},
+				{
+					"type": "origins:adjacent",
+					"adjacent_condition": {
+						"type": "origins:or",
+						"conditions": [{
+								"type": "origins:block",
+								"block": "minecraft:air"
+							},
+							{
+								"type": "origins:fluid",
+								"fluid_condition": {
+									"type": "origins:in_tag",
+									"tag": "minecraft:lava"
+								}
+							},
+							{
+								"type": "origins:fluid",
+								"fluid_condition": {
+									"type": "origins:in_tag",
+									"tag": "minecraft:water"
+								}
+							},
+							{
+								"type": "origins:movement_blocking",
+								"inverted": true
+							}
+						]
+					},
+					"comparison": ">=",
+					"compare_to": 1
+				}
+			]
+		},
 		"condition": {
-			"type": "origins:sneaking",
+			"type": "origins:sneaking"
 		}
 	},
 	"name": "ghost blocks",
