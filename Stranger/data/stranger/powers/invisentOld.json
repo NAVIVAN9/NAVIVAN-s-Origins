@@ -18,8 +18,11 @@
 	},
 	"prevrender": {
 		"type": "origins:prevent_entity_render",
-		"entity_condition": {
-			
+		"condition": {
+			"type": "origins:resource",
+			"resource": "stranger:invisent_trigger",
+			"comparison": "=<",
+			"compare_to": 100
 		}
 	},
 	"glow": {
@@ -27,36 +30,6 @@
 		"bientity_condition": {
 			"type": "origins:can_see"
 		}
-	},
-	"raycast": {
-		"type": "origins:action_over_time",
-		"entity_action": {
-			"type": "origins:raycast",
-			"distance": 10,
-			"block": false,
-			"entity": true,
-			"shape_type": "visual",
-			"fluid_handling": "none",
-			"command_at_hit": "scoreboard players set @s hit 1"
-		},
-		"falling_action": {
-			"type": "origins:excute_command",
-			"command": ""
-		},
-		"interval": 1,
-		"condition": {
-			"type": "origins:living"
-		}
-	},
-	"entrend": {
-		"type": "origins:prevent_entity_render",
-		"entity_condition": {
-			"type": "origins:command",
-			"command": "execute if score @s hit = 0",
-			"comparison": "==",
-			"compare_to": 1
-		},
-		"condition": ""
 	},
 	"name": "invisble entities",
 	"description": "all entities are invisible. If you press the primary power button they will be visible for 5 seconds, cooldown of 20 seconds."
