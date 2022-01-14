@@ -149,5 +149,15 @@
 		}
 	},
 	"name": "ghost blocks",
-	"description": "You phase through the first ''layer'' of blocks. if a block has any faces that are touching air, water, or lava; then it will be passed through. comes with night vision and a lack of suffocation for a better user experience."
+	"description": "You phase through the first ''layer'' of blocks. if a block has any faces that are touching air, water, or lava; then you will through it. comes with night vision and a lack of suffocation for a better user experience.",
+	"badges": [
+    {
+        "sprite": "origins:textures/gui/badge/star.png",
+        "text": "Look mum, I have a star!"
+    },
+    {
+        "sprite": "origins:textures/gui/badge/info.png",
+        "text": "And yes, you can have multiple badges!"
+    }
+]
 }
