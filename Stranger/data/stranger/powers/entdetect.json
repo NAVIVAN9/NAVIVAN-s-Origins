@@ -53,5 +53,27 @@
       "comparison": "==",
       "compare_to": 3
     }
-  }
+  },
+  "distance": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 3,
+    "hud_render": {
+    }
+  },
+  "changedist": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:area_of_effect",
+          "radius": 16,
+          "bientity_action": {
+            "type": "origins:actor_action",
+            "action": {
+              "type": "origins:change_resource",
+              "resource": "stranger:entdect_distance",
+              "operation": "set",
+              "change": 1
 }
