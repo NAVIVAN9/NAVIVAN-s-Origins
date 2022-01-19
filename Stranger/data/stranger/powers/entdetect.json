@@ -19,7 +19,7 @@
 		}
 	},
 	"orange": {
-		"type": "apoli:overlay",
+		"type": "origins:overlay",
 		"texture": "minecraft:textures/misc/nausea.png",
 		"red": 0.3,
 		"green": 0.3,
@@ -37,7 +37,7 @@
 		}
 	},
 	"red": {
-		"type": "apoli:overlay",
+		"type": "origins:overlay",
 		"texture": "minecraft:textures/misc/nausea.png",
 		"red": 0.4,
 		"green": 0.2,
