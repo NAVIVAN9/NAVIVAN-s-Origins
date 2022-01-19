@@ -1,79 +1,118 @@
 {
-  "type": "apoli:multiple",
-  "green": {
-    "type": "origins:overlay",
-    "texture": "minecraft:textures/misc/nausea.png",
-    "red": 0.2,
-    "green": 0.4,
-    "blue": 0.2,
-    "strength": 0.7,
-    "draw_mode": "nausea",
-    "draw_phase": "above_hud",
-    "visible_in_third_person": true,
-    "hide_with_hud": true,
-    "condition": {
-      "type": "origins:resource",
-      "resource": "stranger:entdetect_distance",
-      "comparison": "==",
-      "compare_to": 1
-    }
-  },
-  "orange": {
-    "type": "apoli:overlay",
-    "texture": "minecraft:textures/misc/nausea.png",
-    "red": 0.3,
-    "green": 0.3,
-    "blue": 0.2,
-    "strength": 0.7,
-    "draw_mode": "nausea",
-    "draw_phase": "above_hud",
-    "visible_in_third_person": true,
-    "hide_with_hud": true,
-    "condition": {
-      "type": "origins:resource",
-      "resource": "stranger:entdetect_distance",
-      "comparison": "==",
-      "compare_to": 2
-    }
-  },
-  "red": {
-    "type": "apoli:overlay",
-    "texture": "minecraft:textures/misc/nausea.png",
-    "red": 0.4,
-    "green": 0.2,
-    "blue": 0.2,
-    "strength": 0.7,
-    "draw_mode": "nausea",
-    "draw_phase": "above_hud",
-    "visible_in_third_person": true,
-    "hide_with_hud": true,
-    "condition": {
-      "type": "origins:resource",
-      "resource": "stranger:entdetect_distance",
-      "comparison": "==",
-      "compare_to": 3
-    }
-  },
-  "distance": {
-    "type": "origins:resource",
-    "min": 0,
-    "max": 3,
-    "hud_render": {
-    }
-  },
-  "changedist": {
-    "type": "origins:action_over_time",
-    "entity_action": {
-      "type": "origins:and",
-      "actions": [
-        {
-          "type": "origins:area_of_effect",
-          "radius": 16,
-          "bientity_action": {
-            "type": "origins:actor_action",
-            "action": {
-              "type": "origins:change_resource",
-              "resource": "stranger:entdect_distance",
-              "operation": "set",
-              "change": 1
+	"type": "apoli:multiple",
+	"green": {
+		"type": "origins:overlay",
+		"texture": "minecraft:textures/misc/nausea.png",
+		"red": 0.2,
+		"green": 0.4,
+		"blue": 0.2,
+		"strength": 0.7,
+		"draw_mode": "nausea",
+		"draw_phase": "above_hud",
+		"visible_in_third_person": true,
+		"hide_with_hud": true,
+		"condition": {
+			"type": "origins:resource",
+			"resource": "stranger:entdetect_distance",
+			"comparison": "==",
+			"compare_to": 1
+		}
+	},
+	"orange": {
+		"type": "apoli:overlay",
+		"texture": "minecraft:textures/misc/nausea.png",
+		"red": 0.3,
+		"green": 0.3,
+		"blue": 0.2,
+		"strength": 0.7,
+		"draw_mode": "nausea",
+		"draw_phase": "above_hud",
+		"visible_in_third_person": true,
+		"hide_with_hud": true,
+		"condition": {
+			"type": "origins:resource",
+			"resource": "stranger:entdetect_distance",
+			"comparison": "==",
+			"compare_to": 2
+		}
+	},
+	"red": {
+		"type": "apoli:overlay",
+		"texture": "minecraft:textures/misc/nausea.png",
+		"red": 0.4,
+		"green": 0.2,
+		"blue": 0.2,
+		"strength": 0.7,
+		"draw_mode": "nausea",
+		"draw_phase": "above_hud",
+		"visible_in_third_person": true,
+		"hide_with_hud": true,
+		"condition": {
+			"type": "origins:resource",
+			"resource": "stranger:entdetect_distance",
+			"comparison": "==",
+			"compare_to": 3
+		}
+	},
+	"distance": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 3,
+		"hud_render": {}
+	},
+	"changedist": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [{
+					"type": "origins:area_of_effect",
+					"radius": 16,
+					"bientity_action": {
+						"type": "origins:actor_action",
+						"action": {
+							"type": "origins:change_resource",
+							"resource": "stranger:entdect_distance",
+							"operation": "set",
+							"change": 1
+						}
+					}
+				},
+				{
+					"type": "origins:area_of_effect",
+					"radius": 8,
+					"bientity_action": {
+						"type": "origins:actor_action",
+						"action": {
+							"type": "origins:change_resource",
+							"resource": "stranger:entdect_distance",
+							"operation": "set",
+							"change": 2
+						}
+					}
+				},
+				{
+					"type": "origins:area_of_effect",
+					"radius": 16,
+					"bientity_condition": {
+						"type": "origins:target_condition",
+						"condition": {
+							"type": "origins:exists",
+							"inverted": true
+						}
+					},
+					"bientity_action": {
+						"type": "origins:actor_action",
+						"action": {
+							"type": "origins:change_resource",
+							"resource": "stranger:entdect_distance",
+							"operation": "set",
+							"change": 0
+						}
+					}
+				}
+			]
+		}
+	},
+  "name": "distance check",
+  "description": "checks the distance between the player and entities, with an update every 16, 8, and 4 blocks.
 }
