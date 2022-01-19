@@ -1,4 +1,0 @@
-when you take damage, the damage will be applied after x amount of time
-When you take damage, heal for amount of damage, increase resource by amount of damage, (re)start timer; when timer ends, deal damage based on resource
-Create multiple if-then statements to check for each individual amount of damage from 1-20, heal for 1-20 each time
-Create multiple if-then statements to check for each individual value of the resource from 1->20, when timer =0, deal damage from resource value
