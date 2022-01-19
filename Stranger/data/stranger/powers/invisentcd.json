@@ -6,7 +6,7 @@
 			"type": "origins:and",
 			"actions": [{
 				"type": "origins:trigger_cooldown",
-				"power": "infovore:invisent_cooldown"
+				"power": "infovore:invisentcd_trigger"
 			}]
 		},
 		"cooldown": 200,
@@ -20,7 +20,7 @@
 		"type": "origins:prevent_entity_render",
 		"condition": {
 			"type": "origins:resource",
-			"resource": "stranger:invisent_trigger",
+			"resource": "stranger:invisentcd_trigger",
 			"comparison": "=<",
 			"compare_to": 100
 		}
