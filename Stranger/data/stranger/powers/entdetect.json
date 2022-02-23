@@ -79,7 +79,7 @@
 				},
 				{
 					"type": "origins:area_of_effect",
-					"radius": 8,
+					"radius": 4,
 					"bientity_action": {
 						"type": "origins:actor_action",
 						"action": {
@@ -109,10 +109,23 @@
 							"change": 0
 						}
 					}
+				},
+				{
+					"type": "origins:area_of_effect",
+					"radius": 8,
+					"bientity_action": {
+						"type": "origins:actor_action",
+						"action": {
+							"type": "origins:change_resource",
+							"resource": "stranger:entdect_distance",
+							"operation": "set",
+							"change": 2
+						}
+					}
 				}
 			]
 		}
 	},
-  "name": "distance check",
-  "description": "checks the distance between the player and entities, with an update every 16, 8, and 4 blocks.
+	"name": "distance check",
+	"description": "checks the distance between the player and entities, with an update every 16, 8, and 4 blocks."
 }
