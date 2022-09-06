@@ -1,9 +1,7 @@
 {
 	"name": "Parallel Universes",
 	"description": "Pressing the secondary power button will scroll through the list of available dimensions. Pressing the primary power button will teleport you to the selected dimension. You cannot teleport while holding items, or wearing armor",
-
 	"type": "origins:multiple",
-
 	"travel_error": {
 		"type": "origins:active_self",
 		"cooldown": 10,
@@ -65,7 +63,6 @@
 			]
 		}
 	},
-
 	"travel_to_end": {
 		"type": "origins:active_self",
 		"cooldown": 10,
@@ -137,7 +134,6 @@
 			]
 		}
 	},
-
 	"travel_to_nether": {
 		"type": "origins:active_self",
 		"cooldown": 10,
