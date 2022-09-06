@@ -1,5 +1,5 @@
 {
-	"name": "Parallel Universes",
+	"name": "Dimension Hop",
 	"description": "Pressing the secondary power button will scroll through the list of available dimensions. Pressing the primary power button will teleport you to the selected dimension. You cannot teleport while holding items, or wearing armor",
 	"type": "origins:multiple",
 	"travel_error": {
