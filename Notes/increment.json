@@ -18,26 +18,103 @@
 			"should_render": false
 		}
 	},
-  
-  "increase": {
-    "type": "origins:active_self",
-    "key": {
-      "key": "key.origins.secondary_active"
-    },
-    "entity_action": {
-      "type": "origins:and",
-      "actions": [
-        {
-          "type": "origins:change_resource",
-          "resource": "inttrav:increment_resource",
-          "operation": "add",
-          "change": 1
-        },
-        {
-          "type": "origins:if_else_list",
-          "actions": [
-            {
-              "condition": "origins:resource",
-              "resource": "inttrav:increment_resource",
-              "comparison": 
+
+	"increase": {
+		"type": "origins:active_self",
+		"key": {
+			"key": "key.origins.secondary_active"
+		},
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [{
+					"type": "origins:change_resource",
+					"resource": "inttrav:increment_resource",
+					"operation": "add",
+					"change": 1
+				},
+				{
+					"type": "origins:if_else_list",
+					"actions": [{
+							"condition": {
+								"type": "origins:resource",
+								"resource": "inttrav:increment_resource",
+								"comparison": "==",
+								"compare_to": 0
+							},
+							"action": {
+								"type": "origins:execute_command",
+								"command": "/title @a actionbar {\"text\":\"Overworld\",\"color\":\"white\"}",
+								"permission_level": 2
+							}
+						},
+						{
+							"condition": {
+								"type": "origins:resource",
+								"resource": "inttrav:increment_resource",
+								"comparison": "==",
+								"compare_to": 1
+							},
+							"action": {
+								"type": "origins:execute_command",
+								"command": "/title @a actionbar {\"text\":\"The Nether\",\"color\":\"white\"}",
+								"permission_level": 2
+							}
+						},
+						{
+							"condition": {
+								"type": "origins:resource",
+								"resource": "inttrav:increment_resource",
+								"comparison": "==",
+								"compare_to": 2
+							},
+							"action": {
+								"type": "origins:execute_command",
+								"command": "/title @a actionbar {\"text\":\"The End\",\"color\":\"white\"}",
+								"permission_level": 2
+							}
+						},
+						{
+							"condition": {
+								"type": "origins:resource",
+								"resource": "inttrav:increment_resource",
+								"comparison": "==",
+								"compare_to": 3
+							},
+							"action": {
+								"type": "origins:execute_command",
+								"command": "/title @a actionbar {\"text\":\"Twilight Forest\",\"color\":\"white\"}",
+								"permission_level": 2
+							}
+						},
+						{
+							"condition": {
+								"type": "origins:resource",
+								"resource": "inttrav:increment_resource",
+								"comparison": "==",
+								"compare_to": 4
+							},
+							"action": {
+								"type": "origins:execute_command",
+								"command": "/title @a actionbar {\"text\":\"The Everbright\",\"color\":\"white\"}",
+								"permission_level": 2
+							}
+						},
+						{
+							"condition": {
+								"type": "origins:resource",
+								"resource": "inttrav:increment_resource",
+								"comparison": "==",
+								"compare_to": 5
+							},
+							"action": {
+								"type": "origins:execute_command",
+								"command": "/title @a actionbar {\"text\":\"The Everdawn\",\"color\":\"white\"}",
+								"permission_level": 2
+							}
+						}
+					]
+				}
+			]
+		}
+	}
 }
