@@ -1,17 +1,43 @@
 {
-  "name": "increment",
-  "description": "pressing the secondary power button will increment the resource by 1 and send a message saying what your selected dimension is."
+	"name": "increment",
+	"description": "pressing the secondary power button will increment the resource by 1 and send a message saying what your selected dimension is.",
+
+	"type": "origins:multiple",
+
+	"resource": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 6,
+		"max_action": {
+			"type": "origins:change_resource",
+			"resource": "inttrav:increment_resource",
+			"operation": "set",
+			"change": 1
+		},
+		"hud_render": {
+			"should_render": false
+		}
+	},
   
-  "type": "origins:multiple",
-  
-  "resource": {
-    "type": "origins:resource",
-      "min": 0,
-      "max": 6,
-      "max_action": {
-        "type": "origins:change_resource",
-        "resource": "inttrav:increment_resource",
-        "operation": "set",
-        "change": 1
-      }
-      
+  "increase": {
+    "type": "origins:active_self",
+    "key": {
+      "key": "key.origins.secondary_active"
+    },
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:change_resource",
+          "resource": "inttrav:increment_resource",
+          "operation": "add",
+          "change": 1
+        },
+        {
+          "type": "origins:if_else_list",
+          "actions": [
+            {
+              "condition": "origins:resource",
+              "resource": "inttrav:increment_resource",
+              "comparison": 
+}
