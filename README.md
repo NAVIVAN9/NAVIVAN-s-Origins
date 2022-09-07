@@ -3,7 +3,9 @@
 Impact determining method (inspired by the SCP wiki's box test)
 
 Low: If you choose an origin and you can still play the normal minecraft experience, then it's probably low (Interdimensional Traveler)
+
 Medium: If you choose an orign and you have to make certain changes to take advantage of its strengths and weaknesses, then it's probably medium (silverkin)
+
 High: If you choose an origin, and you have to completely change the way you play, then it's probably high (stranger)
 
 The Interdimensional traveler can switch dimensions, but you don't have to use any of it's abilities, so it's low
