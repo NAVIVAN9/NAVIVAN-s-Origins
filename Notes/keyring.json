@@ -398,7 +398,7 @@
 							"item_condition": {
 								"type": "origins:ingredient",
 								"ingredient": {
-									"item": "minecraft:end_stone"
+									"item": "blue_skies:"
 								}
 							}
 						},
@@ -408,7 +408,7 @@
 							"item_condition": {
 								"type": "origins:ingredient",
 								"ingredient": {
-									"item": "minecraft:end_stone"
+									"item": "blue_skies:"
 								}
 							}
 						}
@@ -488,7 +488,7 @@
 							"item_condition": {
 								"type": "origins:ingredient",
 								"ingredient": {
-									"item": "minecraft:end_stone"
+									"item": "blue_skies:"
 								}
 							}
 						},
@@ -498,7 +498,7 @@
 							"item_condition": {
 								"type": "origins:ingredient",
 								"ingredient": {
-									"item": "minecraft:end_stone"
+									"item": "blue_skies:"
 								}
 							}
 						}
@@ -545,6 +545,13 @@
 	},
 
 	"inventory": {
-		
+		"type": "origins:inventory",
+		"containter_type": "dropper",
+		"title": "knick-knacks",
+		"condition": {
+			"type": "origins:or",
+			"conditions": [{
+				
+			
 	}
 }
