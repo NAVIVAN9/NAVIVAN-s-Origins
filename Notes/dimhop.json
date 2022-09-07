@@ -23,42 +23,60 @@
 			]
 		},
 		"condition": {
-			"type": "origins:or",
+			"type": "origins:and",
 			"conditions": [{
+					"type": "origins:resource",
+					"resource": "inttrav:increment_resource",
+					"comparison": "==",
+					"compare_to": 5
+				},
+				{
 					"type": "origins:command",
 					"command": "execute if data entity @s SelectedItem",
 					"comparison": "==",
-					"compare_to": 1
+					"compare_to": 0
 				},
 				{
 					"type": "origins:command",
 					"command": "execute if data entity @s Inventory[{Slot:-106b}]",
 					"comparison": "==",
-					"compare_to": 1
+					"compare_to": 0
 				},
 				{
-					"type": "origins:command",
-					"command": "execute if data entity @s Inventory[{Slot:103b}]",
-					"comparison": "==",
-					"compare_to": 1
+					"type": "origins:equipped_item",
+					"equipment_slot": "head",
+					"item_condition": {
+						"type": "origins:armor_value",
+						"comparison": ">=",
+						"compare_to": x
+					}
 				},
 				{
-					"type": "origins:command",
-					"command": "execute if data entity @s Inventory[{Slot:102b}]",
-					"comparison": "==",
-					"compare_to": 1
+					"type": "origins:equipped_item",
+					"equipment_slot": "chest",
+					"item_condition": {
+						"type": "origins:armor_value",
+						"comparison": ">=",
+						"compare_to": x
+					}
 				},
 				{
-					"type": "origins:command",
-					"command": "execute if data entity @s Inventory[{Slot:101b}]",
-					"comparison": "==",
-					"compare_to": 1
+					"type": "origins:equipped_item",
+					"equipment_slot": "legs",
+					"item_condition": {
+						"type": "origins:armor_value",
+						"comparison": ">=",
+						"compare_to": x
+					}
 				},
 				{
-					"type": "origins:command",
-					"command": "execute if data entity @s Inventory[{Slot:100b}]",
-					"comparison": "==",
-					"compare_to": 1
+					"type": "origins:equipped_item",
+					"equipment_slot": "feet",
+					"item_condition": {
+						"type": "origins:armor_value",
+						"comparison": ">=",
+						"compare_to": x
+					}
 				}
 			]
 		}
@@ -93,7 +111,7 @@
 					"type": "origins:resource",
 					"resource": "inttrav:increment_resource",
 					"comparison": "==",
-					"compare_to": 2
+					"compare_to": 5
 				},
 				{
 					"type": "origins:command",
@@ -108,28 +126,40 @@
 					"compare_to": 0
 				},
 				{
-					"type": "origins:command",
-					"command": "execute if data entity @s Inventory[{Slot:103b}]",
-					"comparison": "==",
-					"compare_to": 0
+					"type": "origins:equipped_item",
+					"equipment_slot": "head",
+					"item_condition": {
+						"type": "origins:armor_value",
+						"comparison": ">=",
+						"compare_to": x
+					}
 				},
 				{
-					"type": "origins:command",
-					"command": "execute if data entity @s Inventory[{Slot:102b}]",
-					"comparison": "==",
-					"compare_to": 0
+					"type": "origins:equipped_item",
+					"equipment_slot": "chest",
+					"item_condition": {
+						"type": "origins:armor_value",
+						"comparison": ">=",
+						"compare_to": x
+					}
 				},
 				{
-					"type": "origins:command",
-					"command": "execute if data entity @s Inventory[{Slot:101b}]",
-					"comparison": "==",
-					"compare_to": 0
+					"type": "origins:equipped_item",
+					"equipment_slot": "legs",
+					"item_condition": {
+						"type": "origins:armor_value",
+						"comparison": ">=",
+						"compare_to": x
+					}
 				},
 				{
-					"type": "origins:command",
-					"command": "execute if data entity @s Inventory[{Slot:100b}]",
-					"comparison": "==",
-					"compare_to": 0
+					"type": "origins:equipped_item",
+					"equipment_slot": "feet",
+					"item_condition": {
+						"type": "origins:armor_value",
+						"comparison": ">=",
+						"compare_to": x
+					}
 				}
 			]
 		}
@@ -164,7 +194,7 @@
 					"type": "origins:resource",
 					"resource": "inttrav:increment_resource",
 					"comparison": "==",
-					"compare_to": 1
+					"compare_to": 5
 				},
 				{
 					"type": "origins:command",
@@ -179,28 +209,40 @@
 					"compare_to": 0
 				},
 				{
-					"type": "origins:command",
-					"command": "execute if data entity @s Inventory[{Slot:103b}]",
-					"comparison": "==",
-					"compare_to": 0
+					"type": "origins:equipped_item",
+					"equipment_slot": "head",
+					"item_condition": {
+						"type": "origins:armor_value",
+						"comparison": ">=",
+						"compare_to": x
+					}
 				},
 				{
-					"type": "origins:command",
-					"command": "execute if data entity @s Inventory[{Slot:102b}]",
-					"comparison": "==",
-					"compare_to": 0
+					"type": "origins:equipped_item",
+					"equipment_slot": "chest",
+					"item_condition": {
+						"type": "origins:armor_value",
+						"comparison": ">=",
+						"compare_to": x
+					}
 				},
 				{
-					"type": "origins:command",
-					"command": "execute if data entity @s Inventory[{Slot:101b}]",
-					"comparison": "==",
-					"compare_to": 0
+					"type": "origins:equipped_item",
+					"equipment_slot": "legs",
+					"item_condition": {
+						"type": "origins:armor_value",
+						"comparison": ">=",
+						"compare_to": x
+					}
 				},
 				{
-					"type": "origins:command",
-					"command": "execute if data entity @s Inventory[{Slot:100b}]",
-					"comparison": "==",
-					"compare_to": 0
+					"type": "origins:equipped_item",
+					"equipment_slot": "feet",
+					"item_condition": {
+						"type": "origins:armor_value",
+						"comparison": ">=",
+						"compare_to": x
+					}
 				}
 			]
 		}
@@ -235,7 +277,7 @@
 					"type": "origins:resource",
 					"resource": "inttrav:increment_resource",
 					"comparison": "==",
-					"compare_to": 0
+					"compare_to": 5
 				},
 				{
 					"type": "origins:command",
@@ -250,28 +292,40 @@
 					"compare_to": 0
 				},
 				{
-					"type": "origins:command",
-					"command": "execute if data entity @s Inventory[{Slot:103b}]",
-					"comparison": "==",
-					"compare_to": 0
+					"type": "origins:equipped_item",
+					"equipment_slot": "head",
+					"item_condition": {
+						"type": "origins:armor_value",
+						"comparison": ">=",
+						"compare_to": x
+					}
 				},
 				{
-					"type": "origins:command",
-					"command": "execute if data entity @s Inventory[{Slot:102b}]",
-					"comparison": "==",
-					"compare_to": 0
+					"type": "origins:equipped_item",
+					"equipment_slot": "chest",
+					"item_condition": {
+						"type": "origins:armor_value",
+						"comparison": ">=",
+						"compare_to": x
+					}
 				},
 				{
-					"type": "origins:command",
-					"command": "execute if data entity @s Inventory[{Slot:101b}]",
-					"comparison": "==",
-					"compare_to": 0
+					"type": "origins:equipped_item",
+					"equipment_slot": "legs",
+					"item_condition": {
+						"type": "origins:armor_value",
+						"comparison": ">=",
+						"compare_to": x
+					}
 				},
 				{
-					"type": "origins:command",
-					"command": "execute if data entity @s Inventory[{Slot:100b}]",
-					"comparison": "==",
-					"compare_to": 0
+					"type": "origins:equipped_item",
+					"equipment_slot": "feet",
+					"item_condition": {
+						"type": "origins:armor_value",
+						"comparison": ">=",
+						"compare_to": x
+					}
 				}
 			]
 		}
@@ -306,7 +360,7 @@
 					"type": "origins:resource",
 					"resource": "inttrav:increment_resource",
 					"comparison": "==",
-					"compare_to": 3
+					"compare_to": 5
 				},
 				{
 					"type": "origins:command",
@@ -321,28 +375,40 @@
 					"compare_to": 0
 				},
 				{
-					"type": "origins:command",
-					"command": "execute if data entity @s Inventory[{Slot:103b}]",
-					"comparison": "==",
-					"compare_to": 0
+					"type": "origins:equipped_item",
+					"equipment_slot": "head",
+					"item_condition": {
+						"type": "origins:armor_value",
+						"comparison": ">=",
+						"compare_to": x
+					}
 				},
 				{
-					"type": "origins:command",
-					"command": "execute if data entity @s Inventory[{Slot:102b}]",
-					"comparison": "==",
-					"compare_to": 0
+					"type": "origins:equipped_item",
+					"equipment_slot": "chest",
+					"item_condition": {
+						"type": "origins:armor_value",
+						"comparison": ">=",
+						"compare_to": x
+					}
 				},
 				{
-					"type": "origins:command",
-					"command": "execute if data entity @s Inventory[{Slot:101b}]",
-					"comparison": "==",
-					"compare_to": 0
+					"type": "origins:equipped_item",
+					"equipment_slot": "legs",
+					"item_condition": {
+						"type": "origins:armor_value",
+						"comparison": ">=",
+						"compare_to": x
+					}
 				},
 				{
-					"type": "origins:command",
-					"command": "execute if data entity @s Inventory[{Slot:100b}]",
-					"comparison": "==",
-					"compare_to": 0
+					"type": "origins:equipped_item",
+					"equipment_slot": "feet",
+					"item_condition": {
+						"type": "origins:armor_value",
+						"comparison": ">=",
+						"compare_to": x
+					}
 				}
 			]
 		}
@@ -377,7 +443,7 @@
 					"type": "origins:resource",
 					"resource": "inttrav:increment_resource",
 					"comparison": "==",
-					"compare_to": 4
+					"compare_to": 5
 				},
 				{
 					"type": "origins:command",
@@ -392,28 +458,40 @@
 					"compare_to": 0
 				},
 				{
-					"type": "origins:command",
-					"command": "execute if data entity @s Inventory[{Slot:103b}]",
-					"comparison": "==",
-					"compare_to": 0
+					"type": "origins:equipped_item",
+					"equipment_slot": "head",
+					"item_condition": {
+						"type": "origins:armor_value",
+						"comparison": ">=",
+						"compare_to": x
+					}
 				},
 				{
-					"type": "origins:command",
-					"command": "execute if data entity @s Inventory[{Slot:102b}]",
-					"comparison": "==",
-					"compare_to": 0
+					"type": "origins:equipped_item",
+					"equipment_slot": "chest",
+					"item_condition": {
+						"type": "origins:armor_value",
+						"comparison": ">=",
+						"compare_to": x
+					}
 				},
 				{
-					"type": "origins:command",
-					"command": "execute if data entity @s Inventory[{Slot:101b}]",
-					"comparison": "==",
-					"compare_to": 0
+					"type": "origins:equipped_item",
+					"equipment_slot": "legs",
+					"item_condition": {
+						"type": "origins:armor_value",
+						"comparison": ">=",
+						"compare_to": x
+					}
 				},
 				{
-					"type": "origins:command",
-					"command": "execute if data entity @s Inventory[{Slot:100b}]",
-					"comparison": "==",
-					"compare_to": 0
+					"type": "origins:equipped_item",
+					"equipment_slot": "feet",
+					"item_condition": {
+						"type": "origins:armor_value",
+						"comparison": ">=",
+						"compare_to": x
+					}
 				}
 			]
 		}
@@ -463,28 +541,40 @@
 					"compare_to": 0
 				},
 				{
-					"type": "origins:command",
-					"command": "execute if data entity @s Inventory[{Slot:103b}]",
-					"comparison": "==",
-					"compare_to": 0
+					"type": "origins:equipped_item",
+					"equipment_slot": "head",
+					"item_condition": {
+						"type": "origins:armor_value",
+						"comparison": ">=",
+						"compare_to": x
+					}
 				},
 				{
-					"type": "origins:command",
-					"command": "execute if data entity @s Inventory[{Slot:102b}]",
-					"comparison": "==",
-					"compare_to": 0
+					"type": "origins:equipped_item",
+					"equipment_slot": "chest",
+					"item_condition": {
+						"type": "origins:armor_value",
+						"comparison": ">=",
+						"compare_to": x
+					}
 				},
 				{
-					"type": "origins:command",
-					"command": "execute if data entity @s Inventory[{Slot:101b}]",
-					"comparison": "==",
-					"compare_to": 0
+					"type": "origins:equipped_item",
+					"equipment_slot": "legs",
+					"item_condition": {
+						"type": "origins:armor_value",
+						"comparison": ">=",
+						"compare_to": x
+					}
 				},
 				{
-					"type": "origins:command",
-					"command": "execute if data entity @s Inventory[{Slot:100b}]",
-					"comparison": "==",
-					"compare_to": 0
+					"type": "origins:equipped_item",
+					"equipment_slot": "feet",
+					"item_condition": {
+						"type": "origins:armor_value",
+						"comparison": ">=",
+						"compare_to": x
+					}
 				}
 			]
 		}
