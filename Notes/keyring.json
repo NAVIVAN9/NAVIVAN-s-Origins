@@ -1,6 +1,6 @@
 {
 	"name": "Dimension Hop",
-	"description": "Pressing the secondary power button will scroll through the list of available dimensions. Pressing the primary power button will teleport you to the selected dimension. You cannot teleport while holding items, or wearing armor",
+	"description": "You can teleport to any dimension by holding an item that represents it and then pressing the primary power button. If you aren't holding a representative item, then you will instead open an inventory made with the intention of holding the aforementioned items.",
 
 	"type": "origins:multiple",
 
