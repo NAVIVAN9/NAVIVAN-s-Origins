@@ -578,5 +578,88 @@
 				}
 			]
 		}
+	},
+	"travel_to_undergarden": {
+		"type": "origins:active_self",
+		"cooldown": 10,
+		"hud_render": {
+			"should_render": false
+		},
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [{
+					"type": "origins:execute_command",
+					"command": "particle minecraft:instant_effect ~ ~0.5 ~ 0.5 0.5 0.5 0.1 16 normal",
+					"permission_level": 2
+				},
+				{
+					"type": "origins:delay",
+					"ticks": 1,
+					"action": {
+						"type": "origins:execute_command",
+						"command": "execute in undergarden:undergarden run tp ~ ~ ~",
+						"permission_level": 2
+					}
+				}
+			]
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [{
+					"type": "origins:resource",
+					"resource": "inttrav:increment_resource",
+					"comparison": "==",
+					"compare_to": 5
+				},
+				{
+					"type": "origins:command",
+					"command": "execute if data entity @s SelectedItem",
+					"comparison": "==",
+					"compare_to": 0
+				},
+				{
+					"type": "origins:command",
+					"command": "execute if data entity @s Inventory[{Slot:-106b}]",
+					"comparison": "==",
+					"compare_to": 0
+				},
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "head",
+					"item_condition": {
+						"type": "origins:armor_value",
+						"comparison": ">=",
+						"compare_to": w
+					}
+				},
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "chest",
+					"item_condition": {
+						"type": "origins:armor_value",
+						"comparison": ">=",
+						"compare_to": x
+					}
+				},
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "legs",
+					"item_condition": {
+						"type": "origins:armor_value",
+						"comparison": ">=",
+						"compare_to": y
+					}
+				},
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "feet",
+					"item_condition": {
+						"type": "origins:armor_value",
+						"comparison": ">=",
+						"compare_to": z
+					}
+				}
+			]
+		}
 	}
 }
