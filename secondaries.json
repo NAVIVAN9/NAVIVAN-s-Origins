@@ -2,9 +2,9 @@
 	"replace": false,
 	"origins": [
 		"origins:shulk",
-    "extraorigins:inchling:,
-    "origins:enderian:,
-    "origins:elytrian:",
-    "origins:phantom"
+		"extraorigins:inchling",
+		"origins:enderian",
+		"origins:elytrian",
+		"origins:phantom"
 	]
 }
