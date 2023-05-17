@@ -3,3 +3,7 @@ use passenger + add velocity to move a creature that you're riding
 find a way to remove gravity(?) + maximum slipperiness to make it so you float (add a death ceiling)
 when use or used, swap inventories
 action > spawn a bunch of random bullshit
+while behind entity, use to access inventory
+use randomness to create unique powers?? (do research)
+allows for selection of a random set of variables: https://origins.readthedocs.io/en/latest/types/meta_action_types/choice/
+        action on chosen > choice > grant powers
