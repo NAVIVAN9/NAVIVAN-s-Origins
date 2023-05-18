@@ -7,3 +7,4 @@ while behind entity, use to access inventory
 use randomness to create unique powers?? (do research)
 allows for selection of a random set of variables: https://origins.readthedocs.io/en/latest/types/meta_action_types/choice/
         action on chosen > choice > grant powers
+        action on _____ > choice > list of possible options
